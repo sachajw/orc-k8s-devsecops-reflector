@@ -1,7 +1,10 @@
 {
   "permissions": {
     "allow": [
-      "Bash(dotnet build:*)"
+      "Bash(dotnet build:*)",
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\ndocs: add CLAUDE.md for AI-assisted development\n\nAdd comprehensive documentation for AI coding assistants covering:\n- Build and development commands\n- Architecture overview \\(watchers, mirroring, event system\\)\n- Reflection logic and annotation-based configuration\n- Key implementation details \\(caching, concurrency, JsonPatch\\)\n- Testing strategy with K3s testcontainers\n- CI/CD pipeline overview\n\n🤖 Generated with [Claude Code]\\(https://claude.com/claude-code\\)\n\nCo-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git push:*)"
     ],
     "deny": [],
     "ask": []
